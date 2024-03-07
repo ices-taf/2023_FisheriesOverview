@@ -1,6 +1,6 @@
 library(icesTAF)
 library(icesFO)
-
+library(dplyr)
 
 #Previous check of last year content in SAG and in SID
 
@@ -25,7 +25,7 @@ check <- setdiff(sid23$StockKeyLabel, sag23$StockKeyLabel)
 
 #Luca, do you think we need to check something else?
 
-sag_complete <- load_sag_complete(2022)
+# sag_complete <- load_sag_complete(2023)
 
 
 

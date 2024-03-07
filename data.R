@@ -14,11 +14,6 @@ species_list <- read.taf("bootstrap/initial/data/FAO_ASFIS_species/species_list.
 sid <- read.taf("bootstrap/initial/data/ICES_StockInformation/sid.csv")
 
 
-
-
-
-
-
 # 1: ICES official catch statistics
 
 hist <- read.taf("bootstrap/initial/data/ICES_nominal_catches/ICES_historical_catches.csv")
@@ -30,6 +25,8 @@ catches_frmt <- format_catches_noecoregion(hist, official, species_list, sid)
 
 write.taf(catches_frmt, dir = "data", quote = TRUE)
 
+
+# need to improve the attribution to guilds already from here.
 
 
 
