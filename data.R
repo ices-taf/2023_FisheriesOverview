@@ -7,11 +7,11 @@ library(dplyr)
 mkdir("data")
 
 # set working directory
-setwd("D:/Profile/Documents/GitHub/2021_CS_FisheriesOverview")
+# setwd("D:/Profile/Documents/GitHub/2021_CS_FisheriesOverview")
 
-# load species list
-species_list <- read.taf("bootstrap/initial/data/FAO_ASFIS_species/species_list.csv")
-sid <- read.taf("bootstrap/initial/data/ICES_StockInformation/sid.csv")
+# load species list no read from initial
+species_list <- read.taf("boot/data/FAO_ASFIS_species/species_list.csv")
+sid <- read.taf("boot/data/ICES_StockInformation/sid.csv")
 
 
 # 1: ICES official catch statistics
